@@ -6,7 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/pau1tuck/h5p-matching-game"
   },
-  "keywords": ["h5p", "library"],
+  "keywords": [
+    "h5p",
+    "library"
+  ],
   "author": "Paul Tuck @pau1tuck",
   "license": "MIT",
   "main": "dist/h5p-matching-game.js",
@@ -53,7 +56,6 @@
     "prettier-eslint": "^13.0.0",
     "ts-node": "^10.6.0",
     "typescript": "^4.6.2",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4"
+    "webpack-cli": "^4.9.2"
   }
 }

@@ -1,5 +1,5 @@
-import TextOrdering from "../scripts/app";
+import MatchingGame from "../scripts/app";
 
 // Load library
 H5P = H5P || {};
-H5P.TextOrdering = TextOrdering;
+H5P.MatchingGame = MatchingGame;

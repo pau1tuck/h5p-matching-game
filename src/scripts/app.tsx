@@ -13,7 +13,11 @@ export default class MatchingGame extends (H5P.EventDispatcher as {
    * @param {string} contentId  the H5P content ID number
    * @param {object} [extras]   saved state, metadata, etc.
    */
-  constructor(private params: any, private contentId: string, private extras = {}) {
+  constructor(
+    private params: any,
+    private contentId: string,
+    private extras = {},
+  ) {
     super();
     // this.params.$extend({});
 
