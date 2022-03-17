@@ -7,62 +7,62 @@ export default class Parameters {
    * Fills missing properties with default values.
    * @param parameters  the parameters whose values should be used (as received from H5P)
    */
-    private taskDescription: string;
-    private items: [string];
-    private behavior: {};
+  private taskDescription: string;
+  private items: [string];
+  private behavior: {};
 
   constructor(parameters) {
     // assign default values that are used as fallbacks
-    this.taskDescription = 'Explain the words.';
-    this.items = ['Guess me!'];
+    this.taskDescription = "Explain the words.";
+    this.items = ["Guess me!"];
     this.behavior = {
       customTime: false,
       timeLimit: 60,
-      cardSelection: 'forceAll',
+      cardSelection: "forceAll",
       itemCount: 10,
       randomOrder: true,
       showInstructions: true,
-      allowRetry: true
+      allowRetry: true,
     };
 
     // assign actual values coming from the content.json file
-    this._assignValueIfDefined(this, parameters, 'taskDescription');
-    this._assignValueIfDefined(this, parameters, 'items');
+    this._assignValueIfDefined(this, parameters, "taskDescription");
+    this._assignValueIfDefined(this, parameters, "items");
     if (parameters !== undefined && parameters.behavior !== undefined) {
       this._assignValueIfDefined(
         this.behavior,
         parameters.behavior,
-        'customTime'
+        "customTime",
       );
       this._assignValueIfDefined(
         this.behavior,
         parameters.behavior,
-        'timeLimit'
+        "timeLimit",
       );
       this._assignValueIfDefined(
         this.behavior,
         parameters.behavior,
-        'cardSelection'
+        "cardSelection",
       );
       this._assignValueIfDefined(
         this.behavior,
         parameters.behavior,
-        'itemCount'
+        "itemCount",
       );
       this._assignValueIfDefined(
         this.behavior,
         parameters.behavior,
-        'randomOrder'
+        "randomOrder",
       );
       this._assignValueIfDefined(
         this.behavior,
         parameters.behavior,
-        'showInstructions'
+        "showInstructions",
       );
       this._assignValueIfDefined(
         this.behavior,
         parameters.behavior,
-        'allowRetry'
+        "allowRetry",
       );
     }
   }

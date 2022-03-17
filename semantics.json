@@ -15,10 +15,16 @@
     "min": 3,
     "defaultNum": 3,
     "optional": false,
-    "field": {
-      "name": "item",
+    "field1": {
+      "name": "a",
       "type": "text",
-      "label": "Item",
+      "label": "A",
+      "importance": "high"
+    },
+    "field2": {
+      "name": "b",
+      "type": "text",
+      "label": "B",
       "importance": "high"
     }
   }

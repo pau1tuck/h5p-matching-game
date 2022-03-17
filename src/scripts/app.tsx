@@ -37,11 +37,13 @@ export default class MatchingGame extends (H5P.EventDispatcher as {
     this.shuffledList = this.shuffleItems(this.listItems);
     console.log(this.shuffledList);
 
+    /*
     const element = document.createElement("div");
-    element.classList.add("h5p-text-ordering");
+    element.classList.add("h5p-matching-game");
     element.innerHTML = this.shuffledList.map((x: any, y: number) => {
       return x.text;
     });
+    */
 
     /**
      * Attach library to wrapper
