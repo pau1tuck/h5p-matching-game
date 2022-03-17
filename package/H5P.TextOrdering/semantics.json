@@ -1,0 +1,42 @@
+[
+  {
+    "name": "taskDescription",
+    "label": "Task description",
+    "description": "Describe how the user should solve the task.",
+    "default": "Drag the words into the correct order.",
+    "importance": "high",
+    "type": "text"
+  },
+  {
+    "name": "inputType",
+    "label": "Ordering style",
+    "importance": "high",
+    "type": "select",
+    "options": [
+      {
+        "label": "Vertical",
+        "value": "vertical"
+      },
+      {
+        "label": "Horizontal",
+        "value": "horizontal"
+      }
+    ],
+    "default": "vertical"
+  },
+  {
+    "name": "listItems",
+    "type": "list",
+    "label": "Text items",
+    "description": "Enter the individual words or phrases in the correct order.",
+    "min": 3,
+    "defaultNum": 3,
+    "optional": false,
+    "field": {
+      "name": "item",
+      "type": "text",
+      "label": "Item",
+      "importance": "high"
+    }
+  }
+]

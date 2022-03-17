@@ -1,0 +1,17 @@
+{
+    "eslint.validate": [
+        "html",
+        "javascript",
+        "typescript",
+        "typescriptreact"
+    ],
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/library.json"
+            ],
+            "url": "https://raw.githubusercontent.com/sr258/h5p-types/main/schemas/library-schema.json"
+        }
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib"
+}

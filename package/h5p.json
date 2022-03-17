@@ -1,0 +1,34 @@
+{
+  "title": "Text Ordering",
+  "language": "en",
+  "author": "Paul Tuck @pau1tuck",
+  "license": "CC BY-SA",
+  "licenseVersion": "4.0",
+  "authors": [
+    {
+      "name": "Paul Tuck",
+      "role": "Author"
+    }
+  ],
+  "mainLibrary": "H5P.TextOrdering",
+  "machineName": "H5P.TextOrdering",
+  "embedTypes": ["div"],
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.TextOrdering",
+      "majorVersion": 1,
+      "minorVersion": 0
+    },
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.JoubelUI",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ],
+  "editorDependencies": []
+}
