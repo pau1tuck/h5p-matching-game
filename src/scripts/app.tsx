@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Container } from "./components/Container";
 
-export default class TextOrdering extends (H5P.EventDispatcher as {
+export default class MatchingGame extends (H5P.EventDispatcher as {
   new (): any;
 }) {
   /**
@@ -51,6 +51,10 @@ export default class TextOrdering extends (H5P.EventDispatcher as {
 
       // ReactDOM.render(<div>DOM</div>, this.main);
     };
+  }
+
+  private createList = () => {
+
   }
 
   private shuffleItems = (list: string[]): string[] => {
