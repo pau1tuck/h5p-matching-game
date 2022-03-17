@@ -1,7 +1,7 @@
 {
   "title": "Text Ordering",
   "description": "A question-type that requires the vertical or horizontal sequencing of text.",
-  "machineName": "H5P.TextOrdering",
+  "machineName": "H5P.MatchingGame",
   "majorVersion": 1,
   "minorVersion": 0,
   "patchVersion": 1,
@@ -15,12 +15,12 @@
   },
   "preloadedCss": [
     {
-      "path": "dist/h5p-textordering.css"
+      "path": "dist/h5p-matching-game.css"
     }
   ],
   "preloadedJs": [
     {
-      "path": "dist/h5p-textordering.js"
+      "path": "dist/h5p-matching-game.js"
     }
   ],
   "preloadedDependencies": [

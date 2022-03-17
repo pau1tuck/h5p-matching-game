@@ -6,16 +6,13 @@
     "type": "git",
     "url": "git+https://github.com/pau1tuck/h5p-matching-game"
   },
-  "keywords": [
-    "h5p",
-    "library"
-  ],
+  "keywords": ["h5p", "library"],
   "author": "Paul Tuck @pau1tuck",
   "license": "MIT",
   "main": "dist/h5p-matching-game.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production && cp library.json ./package/H5P.MatchingGame/ && cp semantics.json ./package/H5P.MatchingGame/ && cp ./src/css/styles.css ./dist/h5p-MatchingGame.css && cp ./dist/* ./package/H5P.MatchingGame/dist/ && rm ./package/MatchingGame.h5p && cd package && zip -r -D -X MatchingGame.h5p *"
+    "build": "webpack --mode=production && cp library.json ./package/H5P.MatchingGame/ && cp semantics.json ./package/H5P.MatchingGame/ && cp ./src/css/styles.css ./dist/h5p-matching-game.css && cp ./dist/* ./package/H5P.MatchingGame/dist/ && rm ./package/MatchingGame.h5p && cd package && zip -r -D -X MatchingGame.h5p *"
   },
   "dependencies": {
     "react": "^17.0.2",

@@ -15,17 +15,18 @@
     "min": 3,
     "defaultNum": 3,
     "optional": false,
-    "field1": {
-      "name": "a",
-      "type": "text",
-      "label": "A",
-      "importance": "high"
-    },
-    "field2": {
-      "name": "b",
-      "type": "text",
-      "label": "B",
-      "importance": "high"
+    "field": {
+      "type": "group",
+      "name": "alternative",
+      "label": "Alternative",
+      "fields": [
+        {
+          "name": "text",
+          "label": "Text",
+          "importance": "high",
+          "type": "text"
+        }
+      ]
     }
   }
 ]
