@@ -1,5 +1,5 @@
 {
-  "title": "Text Ordering",
+  "title": "Matching Game",
   "language": "en",
   "author": "Paul Tuck @pau1tuck",
   "license": "CC BY-SA",
@@ -10,12 +10,12 @@
       "role": "Author"
     }
   ],
-  "mainLibrary": "H5P.TextOrdering",
-  "machineName": "H5P.TextOrdering",
+  "mainLibrary": "H5P.MatchingGame",
+  "machineName": "H5P.MatchingGame",
   "embedTypes": ["div"],
   "preloadedDependencies": [
     {
-      "machineName": "H5P.TextOrdering",
+      "machineName": "H5P.MatchingGame",
       "majorVersion": 1,
       "minorVersion": 0
     },

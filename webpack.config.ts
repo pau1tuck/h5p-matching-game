@@ -38,14 +38,14 @@ const config: Configuration = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "h5p-textordering.js",
+    filename: "h5p-matching-game.js",
   },
   optimization: {
     minimizer: [new OptimizeCSSAssetsPlugin({})],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "h5p-textordering.css",
+      filename: "h5p-matching-game.css",
     }),
   ],
 };
