@@ -23,8 +23,9 @@ export default class MatchingGame extends (H5P.EventDispatcher as {
 
     this.contentId = contentId;
 
-    this.container = document.createElement("div");
+    this.root = document.createElement("div");
 
+    /*
     this.listItems = params.listItems.map((x: string, y: number) => {
       return {
         text: x,
@@ -33,6 +34,7 @@ export default class MatchingGame extends (H5P.EventDispatcher as {
     });
 
     this.numberOfItems = this.listItems.length;
+    */
 
     this.shuffledList = this.shuffleItems(this.listItems);
     console.log(this.shuffledList);
@@ -52,7 +54,7 @@ export default class MatchingGame extends (H5P.EventDispatcher as {
      */
     this.attach = (wrapper: JQuery) => {
       wrapper.get(0)?.classList.add("h5p-text-ordering");
-      wrapper.get(0)?.appendChild(this.container);
+      wrapper.get(0)?.appendChild(this.root);
       // wrapper.get(0)?.appendChild(element);
 
       ReactDOM.render(<div>React DOM</div>, wrapper.get(0));

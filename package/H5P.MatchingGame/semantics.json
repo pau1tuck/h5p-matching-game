@@ -21,8 +21,14 @@
       "label": "Alternative",
       "fields": [
         {
-          "name": "text",
-          "label": "Text",
+          "name": "a",
+          "label": "A",
+          "importance": "high",
+          "type": "text"
+        },
+        {
+          "name": "b",
+          "label": "B",
           "importance": "high",
           "type": "text"
         }

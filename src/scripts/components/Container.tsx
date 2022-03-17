@@ -1,11 +1,9 @@
 import React from "react";
 
-export function Container({ params, shuffledList }: any) {
+export function Container({ params }: any) {
   return (
     <div>
-      {params.listItems.map((x: any, y: number) => {
-        return x.text;
-      })}
+      <h1>Hello, Mother.</h1>
     </div>
   );
 }
