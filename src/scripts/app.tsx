@@ -9,17 +9,17 @@ export default class MatchingGame extends (H5P.EventDispatcher as {
   /**
    * @constructor
    *
-   * @param {object} params passed from the H5P editor
-   * @param {string} contentId number
-   * @param {object} [extras] Saved state, metadata, etc
+   * @param {object} params     parameters passed from the H5P editor
+   * @param {string} contentId  the H5P content ID number
+   * @param {object} [extras]   saved state, metadata, etc.
    */
-  constructor(private params: any, private id: string, private extras = {}) {
+  constructor(private params: any, private contentId: string, private extras = {}) {
     super();
     // this.params.$extend({});
 
-    this.contentId = id;
+    this.contentId = contentId;
 
-    this.main = document.createElement("div");
+    this.container = document.createElement("div");
 
     this.listItems = params.listItems.map((x: string, y: number) => {
       return {
@@ -46,15 +46,11 @@ export default class MatchingGame extends (H5P.EventDispatcher as {
      */
     this.attach = (wrapper: JQuery) => {
       wrapper.get(0)?.classList.add("h5p-text-ordering");
-      // wrapper.get(0)?.appendChild(this.main);
-      wrapper.get(0)?.appendChild(element);
+      wrapper.get(0)?.appendChild(this.container);
+      // wrapper.get(0)?.appendChild(element);
 
-      // ReactDOM.render(<div>DOM</div>, this.main);
+      ReactDOM.render(<div>React DOM</div>, wrapper.get(0));
     };
-  }
-
-  private createList = () => {
-
   }
 
   private shuffleItems = (list: string[]): string[] => {

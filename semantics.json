@@ -8,23 +8,6 @@
     "type": "text"
   },
   {
-    "name": "inputType",
-    "label": "Ordering style",
-    "importance": "high",
-    "type": "select",
-    "options": [
-      {
-        "label": "Vertical",
-        "value": "vertical"
-      },
-      {
-        "label": "Horizontal",
-        "value": "horizontal"
-      }
-    ],
-    "default": "vertical"
-  },
-  {
     "name": "listItems",
     "type": "list",
     "label": "Text items",
