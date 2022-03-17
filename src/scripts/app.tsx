@@ -36,8 +36,8 @@ export default class MatchingGame extends (H5P.EventDispatcher as {
     this.numberOfItems = this.listItems.length;
     */
 
-    this.shuffledList = this.shuffleItems(this.listItems);
-    console.log(this.shuffledList);
+    // this.shuffledList = this.shuffleItems(this.listItems);
+    // console.log(this.shuffledList);
 
     /*
     const element = document.createElement("div");
@@ -46,7 +46,7 @@ export default class MatchingGame extends (H5P.EventDispatcher as {
       return x.text;
     });
     */
-
+    console.log(params);
     /**
      * Attach library to wrapper
      *
@@ -57,7 +57,7 @@ export default class MatchingGame extends (H5P.EventDispatcher as {
       wrapper.get(0)?.appendChild(this.root);
       // wrapper.get(0)?.appendChild(element);
 
-      ReactDOM.render(<div>React DOM</div>, wrapper.get(0));
+      ReactDOM.render(<Container params={params.listItems} />, wrapper.get(0));
     };
   }
 

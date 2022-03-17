@@ -1,5 +1,9 @@
 import React from "react";
 
+interface params {
+  listItems: any;
+}
+
 export function Container({ params }: any) {
   return (
     <div>
